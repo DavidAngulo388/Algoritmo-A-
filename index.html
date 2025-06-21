@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ruta A* térmica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <h2>Let's Start Here</h2>
+  <div id="menu">
+    <button onclick="calcularRuta()">Calcular ruta</button>
+    <button onclick="reiniciar()">Nueva ruta</button>
+    <label>
+      <input type="checkbox" id="modoPeaton" onchange="alternarModo()" />
+      🧍 Modo peatón
+    </label>
+  </div>
+  <div id="map"></div>
+  <div id="status">Haz clic en el mapa para colocar inicio y destino.</div>
+  <script src="script.js"></script>
+</body>
+</html>
